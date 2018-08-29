@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <script type="text/javascript" src="javascripts/index.js"></script>
+</head>
+
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+    </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+    </div>
+  </nav>
+  <div class="padded">
+  <!-- <h1><%= title %></h1>
+  <p>Welcome to
+    <%= title %>
+  </p> -->
+  <div class="box">
+    <form id="myForm" action="/gotEmail">
+    <div class="field is-grouped">
+      <p class="control is-expanded">
+        <input class="input" type="email" id="textbox_id" placeholder="Enter your email"></p>
+      <p class="control"><input type="submit" class="button is-danger"></input>
+      </p>
+    </div>
+  </form>
+  </div>
+</div>
+</body>
+
+</html>
