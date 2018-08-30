@@ -1,9 +1,9 @@
-TO RUN LOCALLY
+## TO RUN LOCALLY
 
 In collegeApp > routes > index.js  insert email credentials and follow instructions in comments
 
-$ npm install
+`$ npm install`
 
-$ DEBUG=collegeapp:* npm start
+`$ DEBUG=collegeapp:* npm start`
 
 ![alt text](collegeApp/public/images/ss.png)
