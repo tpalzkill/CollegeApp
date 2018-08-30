@@ -8,7 +8,7 @@ let getEmail = function() {
   let input = document.getElementById('textbox_id').value;
   var mailOptions = {
     from: '"Tom Palzkill" <tpalzkilll@gmail.com>', // sender address
-    to: `${input}, ${input}`, // list of receivers
+    to: `${input}`, // list of receivers
     subject: 'Hello ✔', // Subject line
     text: 'Hello world ?', // plaintext body
     html: '<b>Hello world ?</b>' // html body
