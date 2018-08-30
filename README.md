@@ -6,5 +6,4 @@ $ npm install
 
 $ DEBUG=collegeapp:* npm start
 
-![alt text]("collegeApp/public/images/ss.png")
-
+![alt text](collegeApp/public/images/ss.png)
