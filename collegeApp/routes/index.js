@@ -13,7 +13,6 @@ var transporter = nodemailer.createTransport({
 });
 
 
-
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', {
@@ -26,7 +25,7 @@ router.post('/', function(req, res, next) {
   let address = req.body;
   var mailOptions = {
     from: '"Tom Palzkill" <tpalzkilll@gmail.com>', // sender address
-    to: `${address.address}, ${address.address}`, // list of receivers
+    to: `${address.address}`, // list of receivers
     subject: 'Hello ✔', // Subject line
     text: 'Hello world ?', // plaintext body
     html: '<b>Hello world ?</b>' // html body
