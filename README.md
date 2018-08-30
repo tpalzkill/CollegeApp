@@ -1,6 +1,8 @@
 ## TO RUN LOCALLY
 
-In collegeApp > routes > index.js  insert email credentials and follow instructions in comments
+- In collegeApp > routes > index.js  insert email credentials and follow instructions in comments
+
+`$ cd collegeApp`
 
 `$ npm install`
 
