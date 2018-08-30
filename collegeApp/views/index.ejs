@@ -5,10 +5,7 @@
   <title>
     <%= title %>
   </title>
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel='stylesheet' href='/stylesheets/style.css' />
@@ -21,30 +18,46 @@
       <a class="navbar-item" href="https://bulma.io">
       <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
     </a>
-
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
     </div>
   </nav>
   <div class="padded">
-  <!-- <h1><%= title %></h1>
-  <p>Welcome to
-    <%= title %>
-  </p> -->
-  <div class="box">
-    <form id="myForm" action="/" method="post" >
-    <div class="field is-grouped">
-      <p class="control is-expanded">
-        <input class="input" name="address" type="email" id="textbox_id" placeholder="Enter your email"></p>
-      <p class="control"><input type="submit" class="button is-danger"></input>
-      </p>
+    <div class="container is-rounded">
+      <div class="box" id="box">
+        <form id="myForm" onsubmit="animate()" action="/" method="post">
+          <div class="field is-grouped">
+            <p class="control is-expanded has-icons-left has-icons-right">
+              <input class="input is-rounded" name="address" type="email" id="textbox_id" placeholder="Enter your email"><span class="icon is-small is-left">
+      <i class="fas fa-envelope"></i>
+    </span>
+    <span class="icon is-small is-right">
+      <i class="fas fa-check"></i>
+    </span></p>
+            <p class="control"><input type="submit" class="button is-danger is-rounded"></input>
+            </p>
+          </div>
+        </form>
+      </div>
     </div>
-  </form>
+    <div class="columns">
+      <div class="column">
+      </div>
+      <div class="column">
+      </div>
+      <div class="column">
+        <div class="box" id="qr">
+          <figure class="image is-128x128">
+            <img src="images/frame.png">
+            </figure>
+        </div>
+      </div>
+      <div class="column">
+      </div>
+      <div class="column">
+      </div>
+    </div>
   </div>
-</div>
+
 </body>
+
 
 </html>

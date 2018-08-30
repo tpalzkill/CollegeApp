@@ -20,3 +20,7 @@ transporter.sendMail(mailOptions, function(error, info){
     console.log('Message sent: ' + info.response);
 });
 }
+
+let animate = function(){
+  $('box').addClass('animated bounceOutLeft');
+}

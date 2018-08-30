@@ -1,9 +1,36 @@
+html {
+  background-image: url(../images/Austin_Capus_Ext-2-1200x779.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 .padded {
   padding: 50px;
+}
+
+.container {
+  padding-top: 150px;
+  opacity: 0.9;
+}
+
+#textbox_id {
+  opacity: 1.0;
+}
+
+#qr {
+  display: flex;
+  opacity: 0.85;
+  justify-content: center;
+}
+
+
+
+.columns {
+  padding: 100px;
 }
 
 a {
